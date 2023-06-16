@@ -17,13 +17,9 @@ https://github.com/adafruit/Adafruit_CircuitPython_DS3502
 
 """
 
+from time import sleep
 from micropython import const
 from micropython_ds3502.i2c_helpers import CBits, RegisterStruct
-
-try:
-    from typing import Tuple
-except ImportError:
-    pass
 
 
 __version__ = "0.0.0+auto.0"
@@ -31,6 +27,7 @@ __repo__ = "https://github.com/jposada202020/MicroPython_DS3502.git"
 
 _REG_WIPER = const(0x00)  # Wiper value register (R/W)
 _REG_CONTROL = const(0x02)  # Configuration Register (R/W)
+
 
 class DS3502:
     """Driver for the DS3502 Sensor connected over I2C.
