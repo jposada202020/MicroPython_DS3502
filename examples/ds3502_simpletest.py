@@ -20,7 +20,7 @@ while True:
     voltage *= 3.3
     voltage /= 65535
     print(f"Wiper voltage {voltage:.2f}V")
-    print("")
+    print()
     sleep(1.0)
 
     ds3502.wiper = 0
@@ -29,7 +29,7 @@ while True:
     voltage *= 3.3
     voltage /= 65535
     print(f"Wiper voltage {voltage:.2f}V")
-    print("")
+    print()
     sleep(1.0)
 
     ds3502.wiper = 63
