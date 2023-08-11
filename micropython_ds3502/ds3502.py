@@ -35,8 +35,6 @@ class DS3502:
     :param ~machine.I2C i2c: The I2C bus the DS3502 is connected to.
     :param int address: The I2C device address. Defaults to :const:`0x28`
 
-    :raises RuntimeError: if the sensor is not found
-
     **Quickstart: Importing and using the device**
 
     Here is an example of using the :class:`DS3502` class.

@@ -1,4 +1,4 @@
-MicroPython DS3502 Library
+MicroPython DS3502 Driver
 =========================================
 
 
